@@ -1,0 +1,44 @@
+{
+  "sessions": [],
+  "quiz_attempts": [],
+  "questions_asked": [
+    {
+      "question": "What are the various kinds of alter commands in SQL",
+      "topic": "general",
+      "timestamp": "2026-01-10T17:51:52.286858"
+    },
+    {
+      "question": "what are the various alter table commands in sql",
+      "topic": "general",
+      "timestamp": "2026-01-10T17:54:41.067307"
+    },
+    {
+      "question": "what is bloch sphere",
+      "topic": "general",
+      "timestamp": "2026-01-10T17:56:31.415083"
+    },
+    {
+      "question": "what are the various kinds of the alter commands",
+      "topic": "general",
+      "timestamp": "2026-01-10T19:50:26.233622"
+    },
+    {
+      "question": "What are the alter commands in sql",
+      "topic": "general",
+      "timestamp": "2026-01-11T19:26:09.079073"
+    }
+  ],
+  "topic_scores": {
+    "general": {
+      "questions": 5,
+      "quizzes": 0,
+      "total_score": 0,
+      "attempts": 0
+    }
+  },
+  "total_stats": {
+    "questions_asked": 5,
+    "quizzes_taken": 0,
+    "total_quiz_score": 0
+  }
+}

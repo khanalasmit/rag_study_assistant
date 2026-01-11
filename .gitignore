@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# Folders
+/notebooks
+/uploads
+/chroma_db
+
+# Video files
+*.mp4
+
