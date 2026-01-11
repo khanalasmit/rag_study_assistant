@@ -41,7 +41,7 @@ study_assistant/
 └── requirements.txt               # Python dependencies
 ```
 ## Demo video 
-- <video controls src="Screen Recording 2026-01-11 192833.mp4" title="Title"></video>
+- ![alt text](<Screen Recording 2026-01-11 192833.gif>)
 
 ## Key Features
 
@@ -115,7 +115,6 @@ The results are merged and deduplicated to provide diverse, relevant context to 
 
 ### 1. Create Virtual Environment
 ```bash
-cd "c:\Users\Acer\OneDrive\Documents\code folder\AI"
 python -m venv lcenv
 lcenv\Scripts\activate
 source lcenv/bin/activate
@@ -200,6 +199,20 @@ Then open `http://localhost:8501` in your browser.
 
 -----------------
 ### **Demo video for the api key of Groq model(model name not needed during api key retreival)**
-- [Watch the demo video](Screen%20Recording%202026-01-11%20180021.mp4)
+- ![alt text](<Screen Recording 2026-01-11 180021.gif>)
 ---------------------------
+### **.env** file
+```
+LLM_PROVIDER=groq
+GROQ_API_KEY="put your key here"
+EMBEDDING_PROVIDER=sentence-transformers
+EMBEDDING_MODEL=all-MiniLM-L6-v2
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+TOP_K_RESULTS=5
+DEBUG=True
+API_HOST=0.0.0.0
+API_PORT=8000
+MISTRAL_MODEL=mistral-small-latest
+```
 
