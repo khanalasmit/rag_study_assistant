@@ -72,6 +72,12 @@ logs/
 .DS_Store
 Thumbs.db
 
+# Video files (large)
+*.mp4
+*.gif
+*.avi
+*.mov
+
 # Build artifacts
 build/
 dist/
