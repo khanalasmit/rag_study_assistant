@@ -40,6 +40,7 @@ study_assistant/
 ├── Readme.md                      # Project documentation
 └── requirements.txt               # Python dependencies
 ```
+- naviagate to the ```model.ipynb``` to see works before modelling
 ## Demo Video
 ## Demo Video
 [![Watch the demo](https://img.youtube.com/vi/50eV9OrYxqA/maxresdefault.jpg)](https://youtu.be/50eV9OrYxqA)
