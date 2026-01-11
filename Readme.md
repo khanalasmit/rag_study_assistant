@@ -41,7 +41,7 @@ study_assistant/
 └── requirements.txt               # Python dependencies
 ```
 - naviagate to the ```model.ipynb``` to see works before modelling
-## Demo Video
+----------------------
 ## Demo Video
 [![Watch the demo](https://img.youtube.com/vi/50eV9OrYxqA/maxresdefault.jpg)](https://youtu.be/50eV9OrYxqA)
 
@@ -114,96 +114,28 @@ The results are merged and deduplicated to provide diverse, relevant context to 
 ### Prerequisites
 - Python 3.12+
 - pip (Python package manager)
+- Git
 
-### 1. Create Virtual Environment
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/study_assistant.git
+cd study_assistant
+```
+
+### 2. Create Virtual Environment
 ```bash
 python -m venv lcenv
 lcenv\Scripts\activate
 source lcenv/bin/activate
 ```
 
-### 2. Install Dependencies
+### 3. Install Dependencies
 ```bash
-cd study_assistant
 pip install -r requirements.txt
 ```
 
-### 3. Set Environment Variables
+### 4. Set Environment Variables
 Create a `.env` file in the `study_assistant` directory:
-```env
-GROQ_API_KEY=your_groq_api_key_here
-LLM_PROVIDER=groq
-EMBEDDING_MODEL=all-MiniLM-L6-v2
-```
-
-## Running the Application
-
-### FastAPI Backend
-
-The FastAPI backend provides RESTful API endpoints for document processing, chat, quiz generation, and progress tracking.
-
-```bash
-
-cd study_assistant
-
-python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-**API will be available at:** `http://localhost:8000`
-
-**API Documentation:** `http://localhost:8000/docs` (Swagger UI)
-
-#### Available Endpoints:
-- `GET /health` - Health check
-- `POST /documents/upload` - Upload study documents
-- `POST /chat/ask` - Ask questions about your documents
-- `POST /quiz/generate` - Generate quiz from documents
-- `GET /progress` - Get learning progress
-
-### Streamlit Frontend
-
-The Streamlit frontend provides an interactive web interface for the Study Assistant.
-
-```bash
-lcenv\Scripts\activate
-
-cd study_assistant/frontend
-
-streamlit run app.py --server.port 8501
-```
-
-**Frontend will be available at:** `http://localhost:8501`
-
-#### Features:
-- Upload PDF, TXT, and Markdown documents
-- Interactive chat interface for Q&A
-- Quiz generation and practice
-- Progress tracking dashboard
-- Document management
-
-### Running Both (Recommended)
-
-For full functionality, run both the API and frontend:
-
-**Terminal 1 - FastAPI Backend:**
-```bash
-cd study_assistant
-python -m uvicorn main:app --reload --port 8000
-```
-
-**Terminal 2 - Streamlit Frontend:**
-```bash
-cd study_assistant/frontend
-streamlit run app.py --server.port 8501
-```
-
-Then open `http://localhost:8501` in your browser.
-
------------------
-### **Demo video for the api key of Groq model(model name not needed during api key retreival)**
-- ![alt text](<Screen Recording 2026-01-11 180021.gif>)
----------------------------
-### **.env** file
 ```
 LLM_PROVIDER=groq
 GROQ_API_KEY="put your key here"
@@ -217,4 +149,42 @@ API_HOST=0.0.0.0
 API_PORT=8000
 MISTRAL_MODEL=mistral-small-latest
 ```
+
+## Running the Application
+
+### Backend
+```bash
+python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### Frontend
+```bash
+cd frontend
+streamlit run app.py --server.port 8501
+```
+
+### Running Both
+
+**Terminal 1 - Backend:**
+```bash
+python -m uvicorn main:app --reload --port 8000
+```
+
+**Terminal 2 - Frontend:**
+```bash
+cd frontend
+streamlit run app.py --server.port 8501
+```
+
+**Backend:** `http://localhost:8000`
+
+**API Docs:** `http://localhost:8000/docs`
+
+**Frontend:** `http://localhost:8501`
+
+-----------------
+### **Demo video for the api key of Groq model(model name not needed during api key retreival)**
+- ![alt text](<Screen Recording 2026-01-11 180021.gif>)
+---------------------------
+
 
