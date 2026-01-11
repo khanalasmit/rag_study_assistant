@@ -40,8 +40,10 @@ study_assistant/
 ├── Readme.md                      # Project documentation
 └── requirements.txt               # Python dependencies
 ```
-## Demo video 
-- ![alt text](<Screen Recording 2026-01-11 192833.gif>)
+<h2> Demo video</h2> 
+<p align="center">
+  <img src="Screen Recording 2026-01-11 192833.gif" alt="App Demo" />
+</p>
 
 ## Key Features
 
